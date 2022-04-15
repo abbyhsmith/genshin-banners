@@ -1,0 +1,38 @@
+.characterBanner {
+    padding: 5px;
+    display: flex;
+    width: 325px;
+    height: 200px;
+    border: 1px solid #000000;
+    border-bottom: none;
+}
+
+.characterBanner:last-child {
+    border-bottom: 1px solid #000000;
+}
+
+.characterInfo {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.bannersList {
+    margin-bottom: 20px;
+}
+
+.characterImg {
+    overflow: hidden;
+}
+
+.characterImg img {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    width: 140px;
+    object-fit: cover;
+    object-position: -15px -45px;
+}

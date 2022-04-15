@@ -1,0 +1,24 @@
+.navigationBar {
+    display: flex;
+    text-align: center;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.navButton {
+    border: 1px solid #000000;
+    padding: 3px 10px;
+    border-right: none;
+}
+
+.navButton:last-child {
+    border-right: 1px solid #000000;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    &:hover {
+        color: #444444;
+    }
+}
