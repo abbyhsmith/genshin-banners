@@ -3,12 +3,12 @@
     display: flex;
     width: 325px;
     height: 200px;
-    border: 1px solid #000000;
+    border: 1px solid var(--grey);
     border-bottom: none;
-}
-
-.characterBanner:last-child {
-    border-bottom: 1px solid #000000;
+    background-color: #FFFFFF;
+    &:last-child {
+        border-bottom: 1px solid var(--grey);
+    }
 }
 
 .characterInfo {
@@ -26,13 +26,12 @@
 
 .characterImg {
     overflow: hidden;
-}
-
-.characterImg img {
-    display: flex;
-    align-items: center;
-    height: 300px;
-    width: 140px;
-    object-fit: cover;
-    object-position: -15px -45px;
+    img {
+        display: flex;
+        align-items: center;
+        height: 300px;
+        width: 140px;
+        object-fit: cover;
+        object-position: -15px -45px;
+    }
 }

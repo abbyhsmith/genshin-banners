@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import ReactDOM from 'react-dom'
+import classNames  from 'classnames'
 import Nav from './components/Nav/Nav.jsx'
 import NewBannerInput from './components/NewBannerInput/NewBannerInput.jsx'
 import BannersList from './components/BannersList/BannersList.jsx'
@@ -15,10 +16,11 @@ require.context('./img', true, /\.(jpe?g|png|gif|svg|webp)$/)
 
 const App = () => {
 	const [listItems, setListItems] = useState([])
-	const [character, setCharacter] = useState('')
-	const [characterStars, setCharacterStars] = useState('4')
-	const [mostRecentBanner, setMostRecentBanner] = useState('')
-	const [numberRuns, setNumberRuns] = useState(1)
+	// const [character, setCharacter] = useState('')
+	// const [characterStars, setCharacterStars] = useState('4')
+	// const [mostRecentBanner, setMostRecentBanner] = useState('')
+	// const [numberRuns, setNumberRuns] = useState(1)
+	const [showReturnButton, setShowReturnButton] = useState(false)
 
 	const fetchBannerData = () => {
 		fetch('/api/get-banners', {
@@ -30,9 +32,29 @@ const App = () => {
 			})
 	}
 
+	const handleScroll = () => {
+		const offset = window.scrollY
+		if (offset > 175) {
+			setShowReturnButton(true)
+		} else {
+			setShowReturnButton(false)
+		}
+	}
+
+	const returnToTop = () => {
+		window.scrollTo(0,0)
+	}
+
 	useEffect(() => {
 		fetchBannerData()
 	}, [])
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll)
+		return() => {
+			window.removeEventListener('scroll', handleScroll)
+		}
+	})
 
 	let fourStarCharacters = listItems.filter((rarity) => {
 			return rarity.characterStars === '4'
@@ -110,6 +132,11 @@ const App = () => {
 		return returnValue
 	})
 
+	const buttonClass = classNames(
+		{'buttonScrolled': showReturnButton},
+		{'hideButton': !showReturnButton}
+	)
+
 	return (
 		<div className='App'>
 			<h1>Genshin Impact:</h1>
@@ -132,9 +159,10 @@ const App = () => {
 				<StandardFiveStars />
 				<StandardFourStars />
 			</div>
-			<div className='bannerDivs' id='exclusiveCharacters'>
+			<div className='bannerDivs' id='exclusiveChar4acters'>
 				<EventExclusive />
 			</div>
+			<button type='button' className={buttonClass} onClick={returnToTop}>return to top</button>
 		</div>
 	)
 }
