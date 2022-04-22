@@ -5,7 +5,7 @@ import './styles.scss'
 const EventExclusive = () => {
     return(
         <div className='eventExclusive'>
-            <h2>The follow characters were available during exclusive events and are unlikely to be available again:</h2>
+            <h2>The follow characters are unlikely to be available again:</h2>
             <div className='characterBanner'>
                 <div className='characterImg'>
                     <img src={'../../img/aloy.png'} />

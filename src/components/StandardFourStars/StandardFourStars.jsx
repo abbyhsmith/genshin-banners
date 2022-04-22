@@ -3,7 +3,7 @@ import React from 'react'
 const StandardFourStars = () => {
     return(
         <div className='standardBanner'>
-            <h2>The follow characters are exclusively available on the standard banner:</h2>
+            <h2>Four-Star Characters exclusively available on the standard banner:</h2>
             <div className='characterBanner'>
                 <div className='characterImg'>
                     <img src={'../../img/amber.png'} />

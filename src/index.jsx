@@ -139,28 +139,45 @@ const App = () => {
 
 	return (
 		<div className='App'>
-			<h1>Genshin Impact:</h1>
-			<h1>Likely Upcoming Banners</h1>
+			<div className='pageHeader'>
+				<h1>Genshin Impact:</h1>
+				<h1>Likely Upcoming Banners</h1>
+			</div>
 			<Nav />
 			{/* <NewBannerInput character={character} setCharacter={setCharacter} characterStars={characterStars} setCharacterStars={setCharacterStars} mostRecentBanner={mostRecentBanner} setMostRecentBanner={setMostRecentBanner} numberRuns={numberRuns} setNumberRuns={setNumberRuns} fetchBannerData={fetchBannerData} /> */}
-			<div className='bannerDivs' id='likelyBanners'>
-				<LikelyUpcomingBannersByDate listItems={fiveStarCharactersByDate} rarity='5' />
-				<LikelyUpcomingBannersByDate listItems={fourStarCharactersByDate} rarity='4' />
+			<div className='sectionDivs' id='likelyBanners'>
+				<h3>Characters who have gone the longest without a banner</h3>
+				<div className='bannerDivs'>
+					<LikelyUpcomingBannersByDate listItems={fiveStarCharactersByDate} rarity='5' />
+					<LikelyUpcomingBannersByDate listItems={fourStarCharactersByDate} rarity='4' />
+				</div>
 			</div>
-			<div className='bannerDivs'>
-				<LikelyUpcomingBannersByNumberRuns listItems={fiveStarCharactersByNumberRuns} rarity='5' />
-				<LikelyUpcomingBannersByNumberRuns listItems={fourStarCharactersByNumberRuns} rarity='4' />
+			<div className='sectionDivs'>
+				<h3>Characters with the fewest number of banners</h3>
+				<div className='bannerDivs'>
+					<LikelyUpcomingBannersByNumberRuns listItems={fiveStarCharactersByNumberRuns} rarity='5' />
+					<LikelyUpcomingBannersByNumberRuns listItems={fourStarCharactersByNumberRuns} rarity='4' />
+				</div>
 			</div>
-			<div className='bannerDivs' id='bannerHistory'>
-				<BannersList listItems={fiveStarCharactersByDate} rarity='5' />
-				<BannersList listItems={fourStarCharactersByDate} rarity='4' />
+			<div className='sectionDivs' id='bannerHistory'>
+				<h3>Character Banner History</h3>
+				<div className='bannerDivs'>
+					<BannersList listItems={fiveStarCharactersByDate} rarity='5' />
+					<BannersList listItems={fourStarCharactersByDate} rarity='4' />
+				</div>
 			</div>
-			<div className='bannerDivs' id='standardBanner'>
-				<StandardFiveStars />
-				<StandardFourStars />
+			<div className='sectionDivs' id='standardBanner'>
+				<h3>Standard Banner</h3>
+				<div className='bannerDivs'>
+					<StandardFiveStars />
+					<StandardFourStars />
+				</div>
 			</div>
-			<div className='bannerDivs' id='exclusiveChar4acters'>
-				<EventExclusive />
+			<div className='sectionDivs' id='exclusiveCharacters'>
+				<h3>Event Exclusive Characters</h3>
+				<div className='bannerDivs'>
+					<EventExclusive />
+				</div>
 			</div>
 			<button type='button' className={buttonClass} onClick={returnToTop}>return to top</button>
 		</div>

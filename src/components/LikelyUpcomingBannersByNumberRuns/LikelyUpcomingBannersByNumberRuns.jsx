@@ -7,9 +7,8 @@ const LikelyUpcomingBannersByNumberRuns = ({listItems, rarity}) => {
     return(
         <div className='likelyReruns'>
             <h2>
-                The following characters have had the fewest
-                {rarity === '5' && ' runs'}
-                {rarity === '4' && ' rate-ups '}
+                {rarity === '5' && 'Five-Star Characters'}
+                {rarity === '4' && 'Four-Star Characters'}
                 :
             </h2>
             {likelyBanners

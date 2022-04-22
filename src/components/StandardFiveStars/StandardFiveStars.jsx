@@ -5,7 +5,7 @@ import './styles.scss'
 const StandardFiveStars = () => {
     return(
         <div className='standardBanner'>
-            <h2>The follow characters are available on the standard banner and all event banners:</h2>
+            <h2>Five-Star Characters available on standard and all event banners:</h2>
             <div className='characterBanner'>
                 <div className='characterImg'>
                     <img src={'../../img/diluc.png'} />

@@ -1,25 +1,28 @@
 .navigationBar {
     display: flex;
     text-align: center;
-    margin: 20px auto;
+    margin: 30px auto;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    height: 30px;
 }
 
 .navButton {
-    border: 1px solid var(--grey);
+    border-right: 4px dotted var(--green);
     padding: 3px 10px;
-    border-right: none;
+    color: var(--grey);
     &:last-child {
-        border-right: 1px solid var(--grey);
-    }
-    &:hover {
-        background-color: #e3feff;
+        border-right: 0;
     }
 }
 
 a {
     text-decoration: none;
     color: var(--grey);
+    &:hover {
+        color: var(--green);
+    }
 }
 
 @media only screen and (max-width: 679px) {
