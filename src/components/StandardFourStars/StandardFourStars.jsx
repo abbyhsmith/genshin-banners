@@ -6,7 +6,7 @@ const StandardFourStars = () => {
             <h2>Four-Star Characters exclusively available on the standard banner:</h2>
             <div className='characterBanner'>
                 <div className='characterImg'>
-                    <img src={'../../img/amber.png'} />
+                    <img src={'img/amber.jpg'} />
                 </div>
                 <div className='characterInfo'>
                     Amber
@@ -14,7 +14,7 @@ const StandardFourStars = () => {
             </div>
             <div className='characterBanner'>
                 <div className='characterImg'>
-                    <img src={'../../img/kaeya.png'} />
+                    <img src={'img/kaeya.jpg'} />
                 </div>
                 <div className='characterInfo'>
                     Kaeya
@@ -22,7 +22,7 @@ const StandardFourStars = () => {
             </div>
             <div className='characterBanner'>
                 <div className='characterImg'>
-                    <img src={'../../img/lisa.png'} />
+                    <img src={'img/lisa.jpg'} />
                 </div>
                 <div className='characterInfo'>
                     Lisa

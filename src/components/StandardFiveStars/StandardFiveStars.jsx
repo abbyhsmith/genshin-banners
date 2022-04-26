@@ -8,7 +8,7 @@ const StandardFiveStars = () => {
             <h2>Five-Star Characters available on standard and all event banners:</h2>
             <div className='characterBanner'>
                 <div className='characterImg'>
-                    <img src={'../../img/diluc.png'} />
+                    <img src={'img/diluc.jpg'} />
                 </div>
                 <div className='characterInfo'>
                     Diluc
@@ -16,7 +16,7 @@ const StandardFiveStars = () => {
             </div>
             <div className='characterBanner'>
                 <div className='characterImg'>
-                    <img src={'../../img/jean.png'} />
+                    <img src={'img/jean.jpg'} />
                 </div>
                 <div className='characterInfo'>
                     Jean
@@ -24,7 +24,7 @@ const StandardFiveStars = () => {
             </div>
             <div className='characterBanner'>
                 <div className='characterImg'>
-                    <img src={'../../img/keqing.png'} />
+                    <img src={'img/keqing.jpg'} />
                 </div>
                 <div className='characterInfo'>
                     Keqing
@@ -32,7 +32,7 @@ const StandardFiveStars = () => {
             </div>
             <div className='characterBanner'>
                 <div className='characterImg'>
-                    <img src={'../../img/mona.png'} />
+                    <img src={'img/mona.jpg'} />
                 </div>
                 <div className='characterInfo'>
                     Mona
@@ -40,7 +40,7 @@ const StandardFiveStars = () => {
             </div>
             <div className='characterBanner'>
                 <div className='characterImg'>
-                    <img src={'../../img/qiqi.png'} />
+                    <img src={'img/qiqi.jpg'} />
                 </div>
                 <div className='characterInfo'>
                     Qiqi

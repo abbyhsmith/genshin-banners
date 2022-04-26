@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ReactDOM from 'react-dom'
 import classNames  from 'classnames'
 import Nav from './components/Nav/Nav.jsx'
+import Faq from './components/FAQ/FAQ.jsx'
 import NewBannerInput from './components/NewBannerInput/NewBannerInput.jsx'
 import BannersList from './components/BannersList/BannersList.jsx'
 import LikelyUpcomingBannersByDate from './components/LikelyUpcomingBannersByDate/LikelyUpcomingBannersByDate.jsx'
@@ -145,6 +146,9 @@ const App = () => {
 			</div>
 			<Nav />
 			{/* <NewBannerInput character={character} setCharacter={setCharacter} characterStars={characterStars} setCharacterStars={setCharacterStars} mostRecentBanner={mostRecentBanner} setMostRecentBanner={setMostRecentBanner} numberRuns={numberRuns} setNumberRuns={setNumberRuns} fetchBannerData={fetchBannerData} /> */}
+			<div className='sectionDivs'>
+				<Faq />
+			</div>
 			<div className='sectionDivs' id='likelyBanners'>
 				<h3>Characters who have gone the longest without a banner</h3>
 				<div className='bannerDivs'>

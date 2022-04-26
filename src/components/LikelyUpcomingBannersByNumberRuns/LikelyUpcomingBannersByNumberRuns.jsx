@@ -18,7 +18,7 @@ const LikelyUpcomingBannersByNumberRuns = ({listItems, rarity}) => {
                         return(
                             <div className='characterBanner' key={`character-${i}`}>
                                 <div className='characterImg'>
-                                    <img src={`../../img/${character.character.toLowerCase()}.png`} />
+                                    <img src={`img/${character.character.toLowerCase()}.jpg`} />
                                 </div>
                                 <div className='characterInfo'>
                                     <div className='characterName'>
@@ -34,7 +34,7 @@ const LikelyUpcomingBannersByNumberRuns = ({listItems, rarity}) => {
                         return(
                             <div className='characterBanner' key={`character-${i}`}>
                                 <div className='characterImg'>
-                                    <img src={`../../img/${character.character.toLowerCase()}.png`} />
+                                    <img src={`img/${character.character.toLowerCase()}.jpg`} />
                                 </div>
                                 <div className='characterInfo'>
                                     <div className='characterName'>

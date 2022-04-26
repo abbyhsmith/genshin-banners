@@ -8,7 +8,7 @@ const EventExclusive = () => {
             <h2>The follow characters are unlikely to be available again:</h2>
             <div className='characterBanner'>
                 <div className='characterImg'>
-                    <img src={'../../img/aloy.png'} />
+                    <img src={'img/aloy.jpg'} />
                 </div>
                 <div className='characterInfo'>
                     Aloy
